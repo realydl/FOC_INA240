@@ -67,6 +67,7 @@ uint32_t upcurrentq;
 uint32_t upcurrentd;
 
 float now_velocity;
+float now_position;
 float Iq_target;
 
 PhaseCurrent_s current_test;
@@ -188,9 +189,17 @@ int main(void)
 		
 		//电机对相
 		#if 0
-		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_1,0);
+//		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_1,0);
+//		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_2,0);
+//		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_3,0.09*ChannelPulse);
+		
+//		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_1,0);
+//		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_2,0.09*ChannelPulse);
+//		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_3,0);
+		
+		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_1,0.09*ChannelPulse);
 		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_2,0);
-		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_3,0.25*ChannelPulse);
+		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_3,0);
 		
 		current_test = getPhaseCurrents();
 		#endif
@@ -260,16 +269,29 @@ int main(void)
 ////		set_computer_value(SEND_FACT_CMD, CURVES_CH4, &upposition, 1);     // 给通道4发送位置值
 #endif
 
+		//位置环模式
+#if 0
+		now_position = move_position(position_target);
+		loopFOCtest();//电流环PID
+		
+		now_velocity = shaftVelocity();
+		
+//		upvelocity = now_velocity * 1000;//扩大1000
+//		upcurrentq = current.q * 1000 + 1000;//扩大1000，偏置1000
+//		upcurrentd = current.d * 1000 + 1000;//扩大1000,偏置1000
+#endif
+
 //		now_velocity= move_velocity(velocity_target);
 //		loopFOCtest();
-		
+
+		upposition = now_position * 1000;//扩大1000
 		upvelocity = now_velocity * 1000;//扩大1000
 		upcurrentq = current.q * 1000 + 1000;//扩大1000，偏置1000
 		upcurrentd = current.d * 1000 + 1000;//扩大1000,偏置1000
 		set_computer_value(SEND_FACT_CMD, CURVES_CH1, &upcurrentq, 1);     // 给通道1发Iq
 		set_computer_value(SEND_FACT_CMD, CURVES_CH2, &upcurrentd, 1);     // 给通道2发Id
 		set_computer_value(SEND_FACT_CMD, CURVES_CH3, &upvelocity, 1);     // 给通道3发送速度值
-//		set_computer_value(SEND_FACT_CMD, CURVES_CH4, &upposition, 1);     // 给通道4发送位置值
+		set_computer_value(SEND_FACT_CMD, CURVES_CH4, &upposition, 1);     // 给通道4发送位置值
 		
 		
     /* USER CODE END WHILE */

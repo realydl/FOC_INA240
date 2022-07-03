@@ -25,12 +25,12 @@ DQCurrent_s getFOCCurrents(float angle_el)
 //	if(!current.c)
 //	{
 		// if only two measured currents
-	#if 0
+	#if 1
 		i_alpha = realcurrent.a;  
 		i_beta = _1_SQRT3 * realcurrent.a + _2_SQRT3 * realcurrent.b;//a + b + c = 0
 	#endif
 	
-	#if 1
+	#if 0
 		i_alpha = _SQRT3_2 * realcurrent.a;
 		i_beta = _SQRT3_2 * realcurrent.a + _SQRT3 * realcurrent.b;
 	#endif
@@ -55,8 +55,13 @@ DQCurrent_s getFOCCurrents(float angle_el)
 	ct = arm_cos_f32(angle_el);
 	st = arm_sin_f32(angle_el);
 	
+	//simplefoc的park变换
 	ret.d = i_alpha * ct + i_beta * st;
 	ret.q = i_beta * ct - i_alpha * st;
+	
+	//q轴和d轴互换之后的park变换
+//	ret.q = i_alpha * ct + i_beta * st;
+//	ret.d = i_beta * ct - i_alpha * st;
 	return ret;
 }
 

@@ -3,7 +3,7 @@
 <title>Static Call Graph - [stm32f407zgt6ADC\stm32f407zgt6ADC.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image stm32f407zgt6ADC\stm32f407zgt6ADC.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Wed Jun 29 09:35:37 2022
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Mon Jul 04 07:19:37 2022
 <BR><P>
 <H3>Maximum Stack Usage =        328 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1617,7 +1617,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[5c]"></a>main</STRONG> (Thumb, 496 bytes, Stack size 8 bytes, main.o(i.main))
+<P><STRONG><a name="[5c]"></a>main</STRONG> (Thumb, 526 bytes, Stack size 8 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 328<LI>Call Chain = main &rArr; Motor_initFOC &rArr; alignSensor &rArr; setPhaseVoltage &rArr; __hardfp_atan2 &rArr; atan &rArr; __hardfp_atan &rArr; __kernel_poly &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
 </UL>
 <BR>[Calls]<UL><LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_computer_value
@@ -1699,7 +1699,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[f5]"></a>setPhaseVoltage</STRONG> (Thumb, 764 bytes, Stack size 48 bytes, bldcmotor.o(i.setPhaseVoltage))
+<P><STRONG><a name="[f5]"></a>setPhaseVoltage</STRONG> (Thumb, 760 bytes, Stack size 48 bytes, bldcmotor.o(i.setPhaseVoltage))
 <BR><BR>[Stack]<UL><LI>Max Depth = 264<LI>Call Chain = setPhaseVoltage &rArr; __hardfp_atan2 &rArr; atan &rArr; __hardfp_atan &rArr; __kernel_poly &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
 </UL>
 <BR>[Calls]<UL><LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arm_sin_f32

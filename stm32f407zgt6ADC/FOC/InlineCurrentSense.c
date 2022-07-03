@@ -20,9 +20,17 @@ void InlineCurrentSense(float _shunt_resistor, float _gain)
 	
 	volts_to_amps_ratio = 1.0f /_shunt_resistor / _gain; // volts to amps
 	
+#if 1
 	gain_a = volts_to_amps_ratio;
 	gain_b = -volts_to_amps_ratio;//应该和电流放大器芯片的连接有关
 	gain_c = volts_to_amps_ratio;
+#endif
+
+#if 0
+	gain_a = -volts_to_amps_ratio;
+	gain_b = volts_to_amps_ratio;//应该和电流放大器芯片的连接有关
+	gain_c = volts_to_amps_ratio;
+#endif
 	
 	printf("gain_a:%.2f,gain_b:%.2f,gain_c:%.2f.\r\n",gain_a,gain_b,gain_c);
 }
@@ -34,11 +42,17 @@ PhaseCurrent_s getPhaseCurrents(void)
 
 	current_ab.a = (adc_u - offset_ia)*gain_a;// amps
 	current_ab.b = (adc_v - offset_ib)*gain_b;// amps
-	
-//	current.a = (offset_ia - adc_u)*gain_a*1000;// amps
-//	current.b = (offset_ib - adc_v)*gain_b*1000;// amps
-	
 	current_ab.c = -current_ab.a - current_ab.b;
+	
+//	current_ab.c = -(adc_u - offset_ia)*gain_a;// amps
+//	current_ab.b = (adc_v - offset_ib)*gain_b;// amps
+//	current_ab.a = -current_ab.c - current_ab.b;
+	
+//	current_ab.c = -(adc_u - offset_ia)*gain_a;// amps
+//	current_ab.a = -(adc_v - offset_ib)*gain_b;// amps
+//	current_ab.b = -current_ab.c - current_ab.a;
+	
+	
 //	current.c = (adc_w - offset_ic)*gain_c*1000;//
 	
 //	current.a = (adc_u - 1.25)*gain_a*1000;// amps
@@ -177,7 +191,7 @@ int driverAlign(TIM_HandleTypeDef* driver, float voltage){
 	
 	// align phase A
 	float ab_ratio = fabs(c.a / c.b);
-	float ac_ratio = c.c ? fabs(c.a / c.c) : 0;
+	float ac_ratio = c.c ? fabs(c.a / c.c) : 0;//c>0
 	if( ab_ratio > 1.5f ){ // should be ~2    
 		 gain_a *= _sign(c.a);
 	}else if( ab_ratio < 0.7f ){ // should be ~0.5
@@ -187,7 +201,8 @@ int driverAlign(TIM_HandleTypeDef* driver, float voltage){
 		 pinB = tmp_pinA;
 		 gain_a *= _sign(c.b);
 		 exit_flag = 2; // signal that pins have been switched
-	}else if(_isset(pinC) &&  ac_ratio < 0.7f ){ // should be ~0.5
+//	}else if(_isset(pinC) &&  ac_ratio < 0.7f ){ // should be ~0.5
+		}else if( ac_ratio < 0.7f ){ // should be ~0.5
 		 // switch phase A and C
 		 int tmp_pinA = pinA;
 		 pinA = pinC; 
@@ -232,7 +247,8 @@ int driverAlign(TIM_HandleTypeDef* driver, float voltage){
 		 pinA = tmp_pinB;
 		 gain_b *= _sign(c.a);
 		 exit_flag = 2; // signal that pins have been switched
-	}else if(_isset(pinC) && bc_ratio < 0.7f ){ // should be ~0.5
+//	}else if(_isset(pinC) && bc_ratio < 0.7f ){ // should be ~0.5
+		}else if( bc_ratio < 0.7f ){ // should be ~0.5
 		 // switch phase A and C
 		 int tmp_pinB = pinB;
 		 pinB = pinC; 
@@ -243,7 +259,7 @@ int driverAlign(TIM_HandleTypeDef* driver, float voltage){
 		 // error in current sense - phase either not measured or bad connection
 		 return 0;
 	}
-
+/*********************************************************************************/
 	// if phase C measured
 	if(_isset(pinC)){
 		 // set phase B active and phases A and C down

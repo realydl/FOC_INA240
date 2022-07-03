@@ -164,7 +164,11 @@ uint8_t setPhaseVoltage(float Uq, float Ud, float angle_el)
 	float Uout;
 	uint8_t sector;
 	uint8_t sector2;//用于电流采样
-
+	
+//	if(Uq < 0) 
+//		angle_el += _PI;
+//	
+//	 Uq = fabs(Uq);
 	
 	if(Uq> voltage_limit)Uq= voltage_limit;
 	if(Uq<-voltage_limit)Uq=-voltage_limit;
@@ -178,14 +182,14 @@ uint8_t setPhaseVoltage(float Uq, float Ud, float angle_el)
 		Uout = _sqrt(Ud*Ud + Uq*Uq) / voltage_power_supply;
 		// angle normalisation in between 0 and 2pi
 		// only necessary if using _sin and _cos - approximation functions
-		angle_el = _normalizeAngle(-(angle_el + atan2(Uq, Ud)));//电角度加上UqUd之间的夹角
+		angle_el = _normalizeAngle(angle_el + atan2(Uq, Ud));//电角度加上UqUd之间的夹角
 	}
 	else
 	{// only Uq available - no need for atan2 and sqrt
 		Uout = Uq / voltage_power_supply;
 		// angle normalisation in between 0 and 2pi
 		// only necessary if using _sin and _cos - approximation functions
-		angle_el = _normalizeAngle(-(angle_el + _PI_2));
+		angle_el = _normalizeAngle(angle_el + _PI_2);
 	}
 	if(Uout> 0.577f)Uout= 0.577f;
 	if(Uout<-0.577f)Uout=-0.577f;
@@ -287,7 +291,7 @@ float move_position(float position_target){
 	// angle set point
 	shaft_angle_sp = position_target;
 	// calculate velocity set point
-	shaft_velocity_sp = PIDoperator(&P_angle,shaft_angle_sp - shaft_angle);
+	shaft_velocity_sp = PIDoperator(&P_angle,-(shaft_angle_sp - shaft_angle));
 	// calculate the torque command
 	current_sp = PIDoperator(&PID_velocity,(shaft_velocity_sp - shaft_velocity)); // if voltage torque control
 
