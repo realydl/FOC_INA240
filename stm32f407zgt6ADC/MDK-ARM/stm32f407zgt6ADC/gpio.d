@@ -31,6 +31,7 @@ stm32f407zgt6adc\gpio.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash
 stm32f407zgt6adc\gpio.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
 stm32f407zgt6adc\gpio.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 stm32f407zgt6adc\gpio.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+stm32f407zgt6adc\gpio.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
 stm32f407zgt6adc\gpio.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 stm32f407zgt6adc\gpio.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 stm32f407zgt6adc\gpio.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
@@ -54,3 +55,6 @@ stm32f407zgt6adc\gpio.o: ..\FOC\InlineCurrentSense.h
 stm32f407zgt6adc\gpio.o: D:\KeilUvision5MDK\keil526\ARM\ARMCC\Bin\..\include\stdio.h
 stm32f407zgt6adc\gpio.o: ..\FOC\protocol.h
 stm32f407zgt6adc\gpio.o: ../Inc/usart.h
+stm32f407zgt6adc\gpio.o: ..\FOC\tle5012b.h
+stm32f407zgt6adc\gpio.o: ../Inc/spi.h
+stm32f407zgt6adc\gpio.o: ..\FOC\calibration.h

@@ -47,6 +47,8 @@ extern "C" {
 #include "InlineCurrentSense.h"
 #include "stdio.h"
 #include "protocol.h"
+#include "tle5012b.h"
+#include "calibration.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

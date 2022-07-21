@@ -1,9 +1,9 @@
 Dependencies for Project 'stm32f407zgt6ADC', Target 'stm32f407zgt6ADC': (DO NOT MODIFY !)
-F (startup_stm32f407xx.s)(0x62B654FF)(--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 526" --pd "_RTE_ SETA 1" --pd "STM32F407xx SETA 1"--list startup_stm32f407xx.lst --xref -o stm32f407zgt6adc\startup_stm32f407xx.o --depend stm32f407zgt6adc\startup_stm32f407xx.d)
-F (../Src/main.c)(0x62C223CE)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\main.o --omf_browse stm32f407zgt6adc\main.crf --depend stm32f407zgt6adc\main.d)
-I (../Inc/main.h)(0x62B654F9)
+F (startup_stm32f407xx.s)(0x62C8920B)(--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 526" --pd "_RTE_ SETA 1" --pd "STM32F407xx SETA 1"--list startup_stm32f407xx.lst --xref -o stm32f407zgt6adc\startup_stm32f407xx.o --depend stm32f407zgt6adc\startup_stm32f407xx.d)
+F (../Src/main.c)(0x62CF585A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\main.o --omf_browse stm32f407zgt6adc\main.crf --depend stm32f407zgt6adc\main.d)
+I (../Inc/main.h)(0x62CB6CD7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -31,11 +31,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 I (..\FOC\mydelay.h)(0x6257C6E4)
-I (../Inc/tim.h)(0x62B654F6)
+I (../Inc/tim.h)(0x62C89208)
 I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x62258E01)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\math.h)(0x599EDB3E)
@@ -46,19 +47,22 @@ I (..\FOC\MagneticSensorI2C.h)(0x625F5A16)
 I (..\FOC\bsp_SysTick.h)(0x6257B343)
 I (..\FOC\lowpass_filter.h)(0x624FB632)
 I (..\FOC\FOCMotor.h)(0x62526571)
-I (../Inc/adc.h)(0x62B654F5)
+I (../Inc/adc.h)(0x62CF3689)
 I (..\FOC\CurrentSense.h)(0x62B61AEC)
 I (..\FOC\InlineCurrentSense.h)(0x625F5128)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (..\FOC\protocol.h)(0x62526742)
-I (../Inc/usart.h)(0x62B927D8)
-I (../Inc/dma.h)(0x62B654F6)
-I (../Inc/gpio.h)(0x62B654F4)
-F (../Src/gpio.c)(0x62B654F3)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\gpio.o --omf_browse stm32f407zgt6adc\gpio.crf --depend stm32f407zgt6adc\gpio.d)
-I (../Inc/gpio.h)(0x62B654F4)
-I (../Inc/main.h)(0x62B654F9)
+I (../Inc/usart.h)(0x62C89208)
+I (..\FOC\tle5012b.h)(0x62C3C3CD)
+I (../Inc/spi.h)(0x62C89208)
+I (..\FOC\calibration.h)(0x62CB6EC6)
+I (../Inc/dma.h)(0x62C89208)
+I (../Inc/gpio.h)(0x62C89207)
+F (../Src/gpio.c)(0x62C89207)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\gpio.o --omf_browse stm32f407zgt6adc\gpio.crf --depend stm32f407zgt6adc\gpio.d)
+I (../Inc/gpio.h)(0x62C89207)
+I (../Inc/main.h)(0x62CB6CD7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -86,11 +90,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 I (..\FOC\mydelay.h)(0x6257C6E4)
-I (../Inc/tim.h)(0x62B654F6)
+I (../Inc/tim.h)(0x62C89208)
 I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x62258E01)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\math.h)(0x599EDB3E)
@@ -101,17 +106,20 @@ I (..\FOC\MagneticSensorI2C.h)(0x625F5A16)
 I (..\FOC\bsp_SysTick.h)(0x6257B343)
 I (..\FOC\lowpass_filter.h)(0x624FB632)
 I (..\FOC\FOCMotor.h)(0x62526571)
-I (../Inc/adc.h)(0x62B654F5)
+I (../Inc/adc.h)(0x62CF3689)
 I (..\FOC\CurrentSense.h)(0x62B61AEC)
 I (..\FOC\InlineCurrentSense.h)(0x625F5128)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (..\FOC\protocol.h)(0x62526742)
-I (../Inc/usart.h)(0x62B927D8)
-F (../Src/adc.c)(0x62B654F4)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\adc.o --omf_browse stm32f407zgt6adc\adc.crf --depend stm32f407zgt6adc\adc.d)
-I (../Inc/adc.h)(0x62B654F5)
-I (../Inc/main.h)(0x62B654F9)
+I (../Inc/usart.h)(0x62C89208)
+I (..\FOC\tle5012b.h)(0x62C3C3CD)
+I (../Inc/spi.h)(0x62C89208)
+I (..\FOC\calibration.h)(0x62CB6EC6)
+F (../Src/adc.c)(0x62C89207)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\adc.o --omf_browse stm32f407zgt6adc\adc.crf --depend stm32f407zgt6adc\adc.d)
+I (../Inc/adc.h)(0x62CF3689)
+I (../Inc/main.h)(0x62CB6CD7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -139,11 +147,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 I (..\FOC\mydelay.h)(0x6257C6E4)
-I (../Inc/tim.h)(0x62B654F6)
+I (../Inc/tim.h)(0x62C89208)
 I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x62258E01)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\math.h)(0x599EDB3E)
@@ -158,12 +167,15 @@ I (..\FOC\CurrentSense.h)(0x62B61AEC)
 I (..\FOC\InlineCurrentSense.h)(0x625F5128)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (..\FOC\protocol.h)(0x62526742)
-I (../Inc/usart.h)(0x62B927D8)
-F (../Src/tim.c)(0x62B654F6)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\tim.o --omf_browse stm32f407zgt6adc\tim.crf --depend stm32f407zgt6adc\tim.d)
-I (../Inc/tim.h)(0x62B654F6)
-I (../Inc/main.h)(0x62B654F9)
+I (../Inc/usart.h)(0x62C89208)
+I (..\FOC\tle5012b.h)(0x62C3C3CD)
+I (../Inc/spi.h)(0x62C89208)
+I (..\FOC\calibration.h)(0x62CB6EC6)
+F (../Src/dma.c)(0x62C89207)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\dma_1.o --omf_browse stm32f407zgt6adc\dma_1.crf --depend stm32f407zgt6adc\dma_1.d)
+I (../Inc/dma.h)(0x62C89208)
+I (../Inc/main.h)(0x62CB6CD7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -191,10 +203,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 I (..\FOC\mydelay.h)(0x6257C6E4)
+I (../Inc/tim.h)(0x62C89208)
 I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x62258E01)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\math.h)(0x599EDB3E)
@@ -205,17 +219,20 @@ I (..\FOC\MagneticSensorI2C.h)(0x625F5A16)
 I (..\FOC\bsp_SysTick.h)(0x6257B343)
 I (..\FOC\lowpass_filter.h)(0x624FB632)
 I (..\FOC\FOCMotor.h)(0x62526571)
-I (../Inc/adc.h)(0x62B654F5)
+I (../Inc/adc.h)(0x62CF3689)
 I (..\FOC\CurrentSense.h)(0x62B61AEC)
 I (..\FOC\InlineCurrentSense.h)(0x625F5128)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (..\FOC\protocol.h)(0x62526742)
-I (../Inc/usart.h)(0x62B927D8)
-F (../Src/usart.c)(0x62B92076)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\usart.o --omf_browse stm32f407zgt6adc\usart.crf --depend stm32f407zgt6adc\usart.d)
-I (../Inc/usart.h)(0x62B927D8)
-I (../Inc/main.h)(0x62B654F9)
+I (../Inc/usart.h)(0x62C89208)
+I (..\FOC\tle5012b.h)(0x62C3C3CD)
+I (../Inc/spi.h)(0x62C89208)
+I (..\FOC\calibration.h)(0x62CB6EC6)
+F (../Src/spi.c)(0x62C89208)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\spi.o --omf_browse stm32f407zgt6adc\spi.crf --depend stm32f407zgt6adc\spi.d)
+I (../Inc/spi.h)(0x62C89208)
+I (../Inc/main.h)(0x62CB6CD7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -243,11 +260,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 I (..\FOC\mydelay.h)(0x6257C6E4)
-I (../Inc/tim.h)(0x62B654F6)
+I (../Inc/tim.h)(0x62C89208)
 I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x62258E01)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\math.h)(0x599EDB3E)
@@ -258,15 +276,19 @@ I (..\FOC\MagneticSensorI2C.h)(0x625F5A16)
 I (..\FOC\bsp_SysTick.h)(0x6257B343)
 I (..\FOC\lowpass_filter.h)(0x624FB632)
 I (..\FOC\FOCMotor.h)(0x62526571)
-I (../Inc/adc.h)(0x62B654F5)
+I (../Inc/adc.h)(0x62CF3689)
 I (..\FOC\CurrentSense.h)(0x62B61AEC)
 I (..\FOC\InlineCurrentSense.h)(0x625F5128)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (..\FOC\protocol.h)(0x62526742)
-F (../Src/stm32f4xx_it.c)(0x62B654F8)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\stm32f4xx_it.o --omf_browse stm32f407zgt6adc\stm32f4xx_it.crf --depend stm32f407zgt6adc\stm32f4xx_it.d)
-I (../Inc/main.h)(0x62B654F9)
+I (../Inc/usart.h)(0x62C89208)
+I (..\FOC\tle5012b.h)(0x62C3C3CD)
+I (..\FOC\calibration.h)(0x62CB6EC6)
+F (../Src/tim.c)(0x62C89208)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\tim.o --omf_browse stm32f407zgt6adc\tim.crf --depend stm32f407zgt6adc\tim.d)
+I (../Inc/tim.h)(0x62C89208)
+I (../Inc/main.h)(0x62CB6CD7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -294,11 +316,11 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 I (..\FOC\mydelay.h)(0x6257C6E4)
-I (../Inc/tim.h)(0x62B654F6)
 I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x62258E01)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\math.h)(0x599EDB3E)
@@ -309,17 +331,20 @@ I (..\FOC\MagneticSensorI2C.h)(0x625F5A16)
 I (..\FOC\bsp_SysTick.h)(0x6257B343)
 I (..\FOC\lowpass_filter.h)(0x624FB632)
 I (..\FOC\FOCMotor.h)(0x62526571)
-I (../Inc/adc.h)(0x62B654F5)
+I (../Inc/adc.h)(0x62CF3689)
 I (..\FOC\CurrentSense.h)(0x62B61AEC)
 I (..\FOC\InlineCurrentSense.h)(0x625F5128)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (..\FOC\protocol.h)(0x62526742)
-I (../Inc/usart.h)(0x62B927D8)
-I (../Inc/stm32f4xx_it.h)(0x62B654F9)
-F (../Src/stm32f4xx_hal_msp.c)(0x62B654F9)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\stm32f4xx_hal_msp.o --omf_browse stm32f407zgt6adc\stm32f4xx_hal_msp.crf --depend stm32f407zgt6adc\stm32f4xx_hal_msp.d)
-I (../Inc/main.h)(0x62B654F9)
+I (../Inc/usart.h)(0x62C89208)
+I (..\FOC\tle5012b.h)(0x62C3C3CD)
+I (../Inc/spi.h)(0x62C89208)
+I (..\FOC\calibration.h)(0x62CB6EC6)
+F (../Src/usart.c)(0x62C89208)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\usart.o --omf_browse stm32f407zgt6adc\usart.crf --depend stm32f407zgt6adc\usart.d)
+I (../Inc/usart.h)(0x62C89208)
+I (../Inc/main.h)(0x62CB6CD7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -347,11 +372,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 I (..\FOC\mydelay.h)(0x6257C6E4)
-I (../Inc/tim.h)(0x62B654F6)
+I (../Inc/tim.h)(0x62C89208)
 I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x62258E01)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\math.h)(0x599EDB3E)
@@ -362,17 +388,18 @@ I (..\FOC\MagneticSensorI2C.h)(0x625F5A16)
 I (..\FOC\bsp_SysTick.h)(0x6257B343)
 I (..\FOC\lowpass_filter.h)(0x624FB632)
 I (..\FOC\FOCMotor.h)(0x62526571)
-I (../Inc/adc.h)(0x62B654F5)
+I (../Inc/adc.h)(0x62CF3689)
 I (..\FOC\CurrentSense.h)(0x62B61AEC)
 I (..\FOC\InlineCurrentSense.h)(0x625F5128)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (..\FOC\protocol.h)(0x62526742)
-I (../Inc/usart.h)(0x62B927D8)
-F (../Src/dma.c)(0x62B654F6)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\dma.o --omf_browse stm32f407zgt6adc\dma.crf --depend stm32f407zgt6adc\dma.d)
-I (../Inc/dma.h)(0x62B654F6)
-I (../Inc/main.h)(0x62B654F9)
+I (..\FOC\tle5012b.h)(0x62C3C3CD)
+I (../Inc/spi.h)(0x62C89208)
+I (..\FOC\calibration.h)(0x62CB6EC6)
+F (../Src/stm32f4xx_it.c)(0x62C89208)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\stm32f4xx_it.o --omf_browse stm32f407zgt6adc\stm32f4xx_it.crf --depend stm32f407zgt6adc\stm32f4xx_it.d)
+I (../Inc/main.h)(0x62CB6CD7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -400,11 +427,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 I (..\FOC\mydelay.h)(0x6257C6E4)
-I (../Inc/tim.h)(0x62B654F6)
+I (../Inc/tim.h)(0x62C89208)
 I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x62258E01)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\math.h)(0x599EDB3E)
@@ -415,15 +443,132 @@ I (..\FOC\MagneticSensorI2C.h)(0x625F5A16)
 I (..\FOC\bsp_SysTick.h)(0x6257B343)
 I (..\FOC\lowpass_filter.h)(0x624FB632)
 I (..\FOC\FOCMotor.h)(0x62526571)
-I (../Inc/adc.h)(0x62B654F5)
+I (../Inc/adc.h)(0x62CF3689)
 I (..\FOC\CurrentSense.h)(0x62B61AEC)
 I (..\FOC\InlineCurrentSense.h)(0x625F5128)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (..\FOC\protocol.h)(0x62526742)
-I (../Inc/usart.h)(0x62B927D8)
+I (../Inc/usart.h)(0x62C89208)
+I (..\FOC\tle5012b.h)(0x62C3C3CD)
+I (../Inc/spi.h)(0x62C89208)
+I (..\FOC\calibration.h)(0x62CB6EC6)
+I (../Inc/stm32f4xx_it.h)(0x62C89208)
+F (../Src/stm32f4xx_hal_msp.c)(0x62C89208)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\stm32f4xx_hal_msp.o --omf_browse stm32f407zgt6adc\stm32f4xx_hal_msp.crf --depend stm32f407zgt6adc\stm32f4xx_hal_msp.d)
+I (../Inc/main.h)(0x62CB6CD7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x62258E35)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x62258E02)
+I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x62258E02)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x62258E02)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x62258E02)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x62258E02)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x62258E35)
+I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stddef.h)(0x599EDB3C)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
+I (..\FOC\mydelay.h)(0x6257C6E4)
+I (../Inc/tim.h)(0x62C89208)
+I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x62258E01)
+I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\string.h)(0x599EDB3C)
+I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\math.h)(0x599EDB3E)
+I (..\FOC\foc_utils.h)(0x625CA9DE)
+I (..\FOC\BLDCmotor.h)(0x62B93B7D)
+I (..\FOC\pid.h)(0x6260A784)
+I (..\FOC\MagneticSensorI2C.h)(0x625F5A16)
+I (..\FOC\bsp_SysTick.h)(0x6257B343)
+I (..\FOC\lowpass_filter.h)(0x624FB632)
+I (..\FOC\FOCMotor.h)(0x62526571)
+I (../Inc/adc.h)(0x62CF3689)
+I (..\FOC\CurrentSense.h)(0x62B61AEC)
+I (..\FOC\InlineCurrentSense.h)(0x625F5128)
+I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
+I (..\FOC\protocol.h)(0x62526742)
+I (../Inc/usart.h)(0x62C89208)
+I (..\FOC\tle5012b.h)(0x62C3C3CD)
+I (../Inc/spi.h)(0x62C89208)
+I (..\FOC\calibration.h)(0x62CB6EC6)
+F (../Src/dma.c)(0x62C89207)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\dma_1.o --omf_browse stm32f407zgt6adc\dma_1.crf --depend stm32f407zgt6adc\dma_1.d)
+I (../Inc/dma.h)(0x62C89208)
+I (../Inc/main.h)(0x62CB6CD7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x62258E35)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x62258E02)
+I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x62258E02)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x62258E02)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x62258E02)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x62258E02)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x62258E35)
+I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stddef.h)(0x599EDB3C)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
+I (..\FOC\mydelay.h)(0x6257C6E4)
+I (../Inc/tim.h)(0x62C89208)
+I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x62258E01)
+I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\string.h)(0x599EDB3C)
+I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\math.h)(0x599EDB3E)
+I (..\FOC\foc_utils.h)(0x625CA9DE)
+I (..\FOC\BLDCmotor.h)(0x62B93B7D)
+I (..\FOC\pid.h)(0x6260A784)
+I (..\FOC\MagneticSensorI2C.h)(0x625F5A16)
+I (..\FOC\bsp_SysTick.h)(0x6257B343)
+I (..\FOC\lowpass_filter.h)(0x624FB632)
+I (..\FOC\FOCMotor.h)(0x62526571)
+I (../Inc/adc.h)(0x62CF3689)
+I (..\FOC\CurrentSense.h)(0x62B61AEC)
+I (..\FOC\InlineCurrentSense.h)(0x625F5128)
+I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
+I (..\FOC\protocol.h)(0x62526742)
+I (../Inc/usart.h)(0x62C89208)
+I (..\FOC\tle5012b.h)(0x62C3C3CD)
+I (../Inc/spi.h)(0x62C89208)
+I (..\FOC\calibration.h)(0x62CB6EC6)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c)(0x62258E35)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\stm32f4xx_hal_adc.o --omf_browse stm32f407zgt6adc\stm32f4xx_hal_adc.crf --depend stm32f407zgt6adc\stm32f4xx_hal_adc.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -451,12 +596,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c)(0x62258E35)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\stm32f4xx_hal_adc_ex.o --omf_browse stm32f407zgt6adc\stm32f4xx_hal_adc_ex.crf --depend stm32f407zgt6adc\stm32f4xx_hal_adc_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -484,12 +630,47 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c)(0x62258E35)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\stm32f4xx_hal_spi.o --omf_browse stm32f407zgt6adc\stm32f4xx_hal_spi.crf --depend stm32f407zgt6adc\stm32f4xx_hal_spi.d)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x62258E35)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x62258E02)
+I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x62258E02)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x62258E02)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x62258E02)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x62258E02)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x62258E35)
+I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stddef.h)(0x599EDB3C)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c)(0x62258E35)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\stm32f4xx_hal_tim.o --omf_browse stm32f407zgt6adc\stm32f4xx_hal_tim.crf --depend stm32f407zgt6adc\stm32f4xx_hal_tim.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -517,12 +698,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c)(0x62258E35)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\stm32f4xx_hal_tim_ex.o --omf_browse stm32f407zgt6adc\stm32f4xx_hal_tim_ex.crf --depend stm32f407zgt6adc\stm32f4xx_hal_tim_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -550,12 +732,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c)(0x62258E35)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\stm32f4xx_hal_uart.o --omf_browse stm32f407zgt6adc\stm32f4xx_hal_uart.crf --depend stm32f407zgt6adc\stm32f4xx_hal_uart.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -583,12 +766,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c)(0x62258E35)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\stm32f4xx_hal_rcc.o --omf_browse stm32f407zgt6adc\stm32f4xx_hal_rcc.crf --depend stm32f407zgt6adc\stm32f4xx_hal_rcc.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -616,12 +800,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c)(0x62258E35)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\stm32f4xx_hal_rcc_ex.o --omf_browse stm32f407zgt6adc\stm32f4xx_hal_rcc_ex.crf --depend stm32f407zgt6adc\stm32f4xx_hal_rcc_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -649,12 +834,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c)(0x62258E35)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\stm32f4xx_hal_flash.o --omf_browse stm32f407zgt6adc\stm32f4xx_hal_flash.crf --depend stm32f407zgt6adc\stm32f4xx_hal_flash.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -682,12 +868,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c)(0x62258E35)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\stm32f4xx_hal_flash_ex.o --omf_browse stm32f407zgt6adc\stm32f4xx_hal_flash_ex.crf --depend stm32f407zgt6adc\stm32f4xx_hal_flash_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -715,12 +902,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c)(0x62258E35)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\stm32f4xx_hal_flash_ramfunc.o --omf_browse stm32f407zgt6adc\stm32f4xx_hal_flash_ramfunc.crf --depend stm32f407zgt6adc\stm32f4xx_hal_flash_ramfunc.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -748,12 +936,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c)(0x62258E35)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\stm32f4xx_hal_gpio.o --omf_browse stm32f407zgt6adc\stm32f4xx_hal_gpio.crf --depend stm32f407zgt6adc\stm32f4xx_hal_gpio.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -781,12 +970,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c)(0x62258E35)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\stm32f4xx_hal_dma_ex.o --omf_browse stm32f407zgt6adc\stm32f4xx_hal_dma_ex.crf --depend stm32f407zgt6adc\stm32f4xx_hal_dma_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -814,12 +1004,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c)(0x62258E35)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\stm32f4xx_hal_dma.o --omf_browse stm32f407zgt6adc\stm32f4xx_hal_dma.crf --depend stm32f407zgt6adc\stm32f4xx_hal_dma.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -847,12 +1038,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c)(0x62258E35)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\stm32f4xx_hal_pwr.o --omf_browse stm32f407zgt6adc\stm32f4xx_hal_pwr.crf --depend stm32f407zgt6adc\stm32f4xx_hal_pwr.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -880,12 +1072,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c)(0x62258E35)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\stm32f4xx_hal_pwr_ex.o --omf_browse stm32f407zgt6adc\stm32f4xx_hal_pwr_ex.crf --depend stm32f407zgt6adc\stm32f4xx_hal_pwr_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -913,12 +1106,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c)(0x62258E35)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\stm32f4xx_hal_cortex.o --omf_browse stm32f407zgt6adc\stm32f4xx_hal_cortex.crf --depend stm32f407zgt6adc\stm32f4xx_hal_cortex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -946,12 +1140,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c)(0x62258E35)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\stm32f4xx_hal.o --omf_browse stm32f407zgt6adc\stm32f4xx_hal.crf --depend stm32f407zgt6adc\stm32f4xx_hal.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -979,12 +1174,13 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c)(0x62258E35)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\stm32f4xx_hal_exti.o --omf_browse stm32f407zgt6adc\stm32f4xx_hal_exti.crf --depend stm32f407zgt6adc\stm32f4xx_hal_exti.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -1012,6 +1208,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
@@ -1026,7 +1223,7 @@ I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x62258E02)
 I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x62258E02)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x62258E35)
@@ -1045,14 +1242,15 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
-F (..\FOC\BLDCmotor.c)(0x62C223FB)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\bldcmotor.o --omf_browse stm32f407zgt6adc\bldcmotor.crf --depend stm32f407zgt6adc\bldcmotor.d)
+F (..\FOC\BLDCmotor.c)(0x62CF58C2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\bldcmotor.o --omf_browse stm32f407zgt6adc\bldcmotor.crf --depend stm32f407zgt6adc\bldcmotor.d)
 I (..\FOC\BLDCmotor.h)(0x62B93B7D)
-I (../Inc/main.h)(0x62B654F9)
+I (../Inc/main.h)(0x62CB6CD7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -1080,11 +1278,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 I (..\FOC\mydelay.h)(0x6257C6E4)
-I (../Inc/tim.h)(0x62B654F6)
+I (../Inc/tim.h)(0x62C89208)
 I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x62258E01)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\math.h)(0x599EDB3E)
@@ -1094,17 +1293,20 @@ I (..\FOC\MagneticSensorI2C.h)(0x625F5A16)
 I (..\FOC\bsp_SysTick.h)(0x6257B343)
 I (..\FOC\lowpass_filter.h)(0x624FB632)
 I (..\FOC\FOCMotor.h)(0x62526571)
-I (../Inc/adc.h)(0x62B654F5)
+I (../Inc/adc.h)(0x62CF3689)
 I (..\FOC\CurrentSense.h)(0x62B61AEC)
 I (..\FOC\InlineCurrentSense.h)(0x625F5128)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (..\FOC\protocol.h)(0x62526742)
-I (../Inc/usart.h)(0x62B927D8)
-F (..\FOC\CurrentSense.c)(0x62BE1A11)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\currentsense.o --omf_browse stm32f407zgt6adc\currentsense.crf --depend stm32f407zgt6adc\currentsense.d)
+I (../Inc/usart.h)(0x62C89208)
+I (..\FOC\tle5012b.h)(0x62C3C3CD)
+I (../Inc/spi.h)(0x62C89208)
+I (..\FOC\calibration.h)(0x62CB6EC6)
+F (..\FOC\CurrentSense.c)(0x62C224E5)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\currentsense.o --omf_browse stm32f407zgt6adc\currentsense.crf --depend stm32f407zgt6adc\currentsense.d)
 I (..\FOC\CurrentSense.h)(0x62B61AEC)
-I (../Inc/main.h)(0x62B654F9)
+I (../Inc/main.h)(0x62CB6CD7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -1132,11 +1334,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 I (..\FOC\mydelay.h)(0x6257C6E4)
-I (../Inc/tim.h)(0x62B654F6)
+I (../Inc/tim.h)(0x62C89208)
 I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x62258E01)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\math.h)(0x599EDB3E)
@@ -1147,11 +1350,14 @@ I (..\FOC\MagneticSensorI2C.h)(0x625F5A16)
 I (..\FOC\bsp_SysTick.h)(0x6257B343)
 I (..\FOC\lowpass_filter.h)(0x624FB632)
 I (..\FOC\FOCMotor.h)(0x62526571)
-I (../Inc/adc.h)(0x62B654F5)
+I (../Inc/adc.h)(0x62CF3689)
 I (..\FOC\InlineCurrentSense.h)(0x625F5128)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (..\FOC\protocol.h)(0x62526742)
-I (../Inc/usart.h)(0x62B927D8)
+I (../Inc/usart.h)(0x62C89208)
+I (..\FOC\tle5012b.h)(0x62C3C3CD)
+I (../Inc/spi.h)(0x62C89208)
+I (..\FOC\calibration.h)(0x62CB6EC6)
 F (..\FOC\foc_utils.c)(0x6251373E)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\foc_utils.o --omf_browse stm32f407zgt6adc\foc_utils.crf --depend stm32f407zgt6adc\foc_utils.d)
 I (..\FOC\foc_utils.h)(0x625CA9DE)
 I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x62258E01)
@@ -1162,7 +1368,7 @@ I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x62258E02)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x62258E02)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\math.h)(0x599EDB3E)
-F (..\FOC\FOCMotor.c)(0x625C7EC9)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\focmotor.o --omf_browse stm32f407zgt6adc\focmotor.crf --depend stm32f407zgt6adc\focmotor.d)
+F (..\FOC\FOCMotor.c)(0x62CCC5E2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\focmotor.o --omf_browse stm32f407zgt6adc\focmotor.crf --depend stm32f407zgt6adc\focmotor.d)
 I (..\FOC\FOCMotor.h)(0x62526571)
 I (..\FOC\foc_utils.h)(0x625CA9DE)
 I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x62258E01)
@@ -1180,7 +1386,7 @@ I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x62258E35)
 I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x62258E02)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x62258E35)
@@ -1199,22 +1405,26 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 I (..\FOC\mydelay.h)(0x6257C6E4)
-I (../Inc/tim.h)(0x62B654F6)
-I (../Inc/main.h)(0x62B654F9)
+I (../Inc/tim.h)(0x62C89208)
+I (../Inc/main.h)(0x62CB6CD7)
 I (..\FOC\BLDCmotor.h)(0x62B93B7D)
 I (..\FOC\pid.h)(0x6260A784)
 I (..\FOC\lowpass_filter.h)(0x624FB632)
-I (../Inc/adc.h)(0x62B654F5)
+I (../Inc/adc.h)(0x62CF3689)
 I (..\FOC\CurrentSense.h)(0x62B61AEC)
 I (..\FOC\InlineCurrentSense.h)(0x625F5128)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (..\FOC\protocol.h)(0x62526742)
-I (../Inc/usart.h)(0x62B927D8)
-F (..\FOC\InlineCurrentSense.c)(0x62BE24ED)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\inlinecurrentsense.o --omf_browse stm32f407zgt6adc\inlinecurrentsense.crf --depend stm32f407zgt6adc\inlinecurrentsense.d)
+I (../Inc/usart.h)(0x62C89208)
+I (..\FOC\tle5012b.h)(0x62C3C3CD)
+I (../Inc/spi.h)(0x62C89208)
+I (..\FOC\calibration.h)(0x62CB6EC6)
+F (..\FOC\InlineCurrentSense.c)(0x62CB512A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\inlinecurrentsense.o --omf_browse stm32f407zgt6adc\inlinecurrentsense.crf --depend stm32f407zgt6adc\inlinecurrentsense.d)
 I (..\FOC\InlineCurrentSense.h)(0x625F5128)
 I (..\FOC\foc_utils.h)(0x625CA9DE)
 I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x62258E01)
@@ -1225,9 +1435,9 @@ I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x62258E02)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x62258E02)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\math.h)(0x599EDB3E)
-I (../Inc/main.h)(0x62B654F9)
+I (../Inc/main.h)(0x62CB6CD7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -1250,27 +1460,31 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 I (..\FOC\mydelay.h)(0x6257C6E4)
-I (../Inc/tim.h)(0x62B654F6)
+I (../Inc/tim.h)(0x62C89208)
 I (..\FOC\BLDCmotor.h)(0x62B93B7D)
 I (..\FOC\pid.h)(0x6260A784)
 I (..\FOC\MagneticSensorI2C.h)(0x625F5A16)
 I (..\FOC\bsp_SysTick.h)(0x6257B343)
 I (..\FOC\lowpass_filter.h)(0x624FB632)
 I (..\FOC\FOCMotor.h)(0x62526571)
-I (../Inc/adc.h)(0x62B654F5)
+I (../Inc/adc.h)(0x62CF3689)
 I (..\FOC\CurrentSense.h)(0x62B61AEC)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (..\FOC\protocol.h)(0x62526742)
-I (../Inc/usart.h)(0x62B927D8)
+I (../Inc/usart.h)(0x62C89208)
+I (..\FOC\tle5012b.h)(0x62C3C3CD)
+I (../Inc/spi.h)(0x62C89208)
+I (..\FOC\calibration.h)(0x62CB6EC6)
 F (..\FOC\lowpass_filter.c)(0x62B53FA7)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\lowpass_filter.o --omf_browse stm32f407zgt6adc\lowpass_filter.crf --depend stm32f407zgt6adc\lowpass_filter.d)
 I (..\FOC\lowpass_filter.h)(0x624FB632)
-I (../Inc/main.h)(0x62B654F9)
+I (../Inc/main.h)(0x62CB6CD7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -1298,11 +1512,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 I (..\FOC\mydelay.h)(0x6257C6E4)
-I (../Inc/tim.h)(0x62B654F6)
+I (../Inc/tim.h)(0x62C89208)
 I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x62258E01)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\math.h)(0x599EDB3E)
@@ -1312,13 +1527,16 @@ I (..\FOC\pid.h)(0x6260A784)
 I (..\FOC\MagneticSensorI2C.h)(0x625F5A16)
 I (..\FOC\bsp_SysTick.h)(0x6257B343)
 I (..\FOC\FOCMotor.h)(0x62526571)
-I (../Inc/adc.h)(0x62B654F5)
+I (../Inc/adc.h)(0x62CF3689)
 I (..\FOC\CurrentSense.h)(0x62B61AEC)
 I (..\FOC\InlineCurrentSense.h)(0x625F5128)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (..\FOC\protocol.h)(0x62526742)
-I (../Inc/usart.h)(0x62B927D8)
-F (..\FOC\MagneticSensorI2C.c)(0x627DCFF8)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\magneticsensori2c.o --omf_browse stm32f407zgt6adc\magneticsensori2c.crf --depend stm32f407zgt6adc\magneticsensori2c.d)
+I (../Inc/usart.h)(0x62C89208)
+I (..\FOC\tle5012b.h)(0x62C3C3CD)
+I (../Inc/spi.h)(0x62C89208)
+I (..\FOC\calibration.h)(0x62CB6EC6)
+F (..\FOC\MagneticSensorI2C.c)(0x62CCD023)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\magneticsensori2c.o --omf_browse stm32f407zgt6adc\magneticsensori2c.crf --depend stm32f407zgt6adc\magneticsensori2c.d)
 I (..\FOC\MagneticSensorI2C.h)(0x625F5A16)
 I (..\FOC\bsp_SysTick.h)(0x6257B343)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -1331,7 +1549,7 @@ I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x62258E02)
 I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x62258E02)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x62258E35)
@@ -1350,6 +1568,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
@@ -1358,24 +1577,27 @@ I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x62258E01)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\math.h)(0x599EDB3E)
 I (..\FOC\mydelay.h)(0x6257C6E4)
-I (../Inc/tim.h)(0x62B654F6)
-I (../Inc/main.h)(0x62B654F9)
+I (../Inc/tim.h)(0x62C89208)
+I (../Inc/main.h)(0x62CB6CD7)
 I (..\FOC\BLDCmotor.h)(0x62B93B7D)
 I (..\FOC\pid.h)(0x6260A784)
 I (..\FOC\lowpass_filter.h)(0x624FB632)
 I (..\FOC\FOCMotor.h)(0x62526571)
-I (../Inc/adc.h)(0x62B654F5)
+I (../Inc/adc.h)(0x62CF3689)
 I (..\FOC\CurrentSense.h)(0x62B61AEC)
 I (..\FOC\InlineCurrentSense.h)(0x625F5128)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (..\FOC\protocol.h)(0x62526742)
-I (../Inc/usart.h)(0x62B927D8)
+I (../Inc/usart.h)(0x62C89208)
+I (..\FOC\tle5012b.h)(0x62C3C3CD)
+I (../Inc/spi.h)(0x62C89208)
+I (..\FOC\calibration.h)(0x62CB6EC6)
 F (..\FOC\mydelay.c)(0x62637BC5)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\mydelay.o --omf_browse stm32f407zgt6adc\mydelay.crf --depend stm32f407zgt6adc\mydelay.d)
 I (..\FOC\mydelay.h)(0x6257C6E4)
-I (../Inc/tim.h)(0x62B654F6)
-I (../Inc/main.h)(0x62B654F9)
+I (../Inc/tim.h)(0x62C89208)
+I (../Inc/main.h)(0x62CB6CD7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -1403,6 +1625,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
@@ -1416,17 +1639,20 @@ I (..\FOC\MagneticSensorI2C.h)(0x625F5A16)
 I (..\FOC\bsp_SysTick.h)(0x6257B343)
 I (..\FOC\lowpass_filter.h)(0x624FB632)
 I (..\FOC\FOCMotor.h)(0x62526571)
-I (../Inc/adc.h)(0x62B654F5)
+I (../Inc/adc.h)(0x62CF3689)
 I (..\FOC\CurrentSense.h)(0x62B61AEC)
 I (..\FOC\InlineCurrentSense.h)(0x625F5128)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (..\FOC\protocol.h)(0x62526742)
-I (../Inc/usart.h)(0x62B927D8)
-F (..\FOC\pid.c)(0x62BBAA7F)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\pid.o --omf_browse stm32f407zgt6adc\pid.crf --depend stm32f407zgt6adc\pid.d)
+I (../Inc/usart.h)(0x62C89208)
+I (..\FOC\tle5012b.h)(0x62C3C3CD)
+I (../Inc/spi.h)(0x62C89208)
+I (..\FOC\calibration.h)(0x62CB6EC6)
+F (..\FOC\pid.c)(0x62CF4F0E)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\pid.o --omf_browse stm32f407zgt6adc\pid.crf --depend stm32f407zgt6adc\pid.d)
 I (..\FOC\pid.h)(0x6260A784)
-I (../Inc/main.h)(0x62B654F9)
+I (../Inc/main.h)(0x62CB6CD7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -1454,11 +1680,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
 I (..\FOC\mydelay.h)(0x6257C6E4)
-I (../Inc/tim.h)(0x62B654F6)
+I (../Inc/tim.h)(0x62C89208)
 I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x62258E01)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\math.h)(0x599EDB3E)
@@ -1468,12 +1695,15 @@ I (..\FOC\MagneticSensorI2C.h)(0x625F5A16)
 I (..\FOC\bsp_SysTick.h)(0x6257B343)
 I (..\FOC\lowpass_filter.h)(0x624FB632)
 I (..\FOC\FOCMotor.h)(0x62526571)
-I (../Inc/adc.h)(0x62B654F5)
+I (../Inc/adc.h)(0x62CF3689)
 I (..\FOC\CurrentSense.h)(0x62B61AEC)
 I (..\FOC\InlineCurrentSense.h)(0x625F5128)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (..\FOC\protocol.h)(0x62526742)
-I (../Inc/usart.h)(0x62B927D8)
+I (../Inc/usart.h)(0x62C89208)
+I (..\FOC\tle5012b.h)(0x62C3C3CD)
+I (../Inc/spi.h)(0x62C89208)
+I (..\FOC\calibration.h)(0x62CB6EC6)
 F (..\FOC\protocol.c)(0x62B91FB5)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\protocol.o --omf_browse stm32f407zgt6adc\protocol.crf --depend stm32f407zgt6adc\protocol.d)
 I (..\FOC\protocol.h)(0x62526742)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
@@ -1486,7 +1716,7 @@ I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x62258E02)
 I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x62258E02)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
-I (../Inc/stm32f4xx_hal_conf.h)(0x62B654F9)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x62258E35)
@@ -1505,13 +1735,14 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
-I (../Inc/usart.h)(0x62B927D8)
-I (../Inc/main.h)(0x62B654F9)
+I (../Inc/usart.h)(0x62C89208)
+I (../Inc/main.h)(0x62CB6CD7)
 I (..\FOC\mydelay.h)(0x6257C6E4)
-I (../Inc/tim.h)(0x62B654F6)
+I (../Inc/tim.h)(0x62C89208)
 I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x62258E01)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\math.h)(0x599EDB3E)
@@ -1522,10 +1753,125 @@ I (..\FOC\MagneticSensorI2C.h)(0x625F5A16)
 I (..\FOC\bsp_SysTick.h)(0x6257B343)
 I (..\FOC\lowpass_filter.h)(0x624FB632)
 I (..\FOC\FOCMotor.h)(0x62526571)
-I (../Inc/adc.h)(0x62B654F5)
+I (../Inc/adc.h)(0x62CF3689)
 I (..\FOC\CurrentSense.h)(0x62B61AEC)
 I (..\FOC\InlineCurrentSense.h)(0x625F5128)
 I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
+I (..\FOC\tle5012b.h)(0x62C3C3CD)
+I (../Inc/spi.h)(0x62C89208)
+I (..\FOC\calibration.h)(0x62CB6EC6)
+F (..\FOC\tle5012b.c)(0x62C3C4DD)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\tle5012b.o --omf_browse stm32f407zgt6adc\tle5012b.crf --depend stm32f407zgt6adc\tle5012b.d)
+I (..\FOC\tle5012b.h)(0x62C3C3CD)
+I (../Inc/spi.h)(0x62C89208)
+I (../Inc/main.h)(0x62CB6CD7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x62258E35)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x62258E02)
+I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x62258E02)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x62258E02)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x62258E02)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x62258E02)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x62258E35)
+I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stddef.h)(0x599EDB3C)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
+I (..\FOC\mydelay.h)(0x6257C6E4)
+I (../Inc/tim.h)(0x62C89208)
+I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x62258E01)
+I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\string.h)(0x599EDB3C)
+I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\math.h)(0x599EDB3E)
+I (..\FOC\foc_utils.h)(0x625CA9DE)
+I (..\FOC\BLDCmotor.h)(0x62B93B7D)
+I (..\FOC\pid.h)(0x6260A784)
+I (..\FOC\MagneticSensorI2C.h)(0x625F5A16)
+I (..\FOC\bsp_SysTick.h)(0x6257B343)
+I (..\FOC\lowpass_filter.h)(0x624FB632)
+I (..\FOC\FOCMotor.h)(0x62526571)
+I (../Inc/adc.h)(0x62CF3689)
+I (..\FOC\CurrentSense.h)(0x62B61AEC)
+I (..\FOC\InlineCurrentSense.h)(0x625F5128)
+I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
+I (..\FOC\protocol.h)(0x62526742)
+I (../Inc/usart.h)(0x62C89208)
+I (..\FOC\calibration.h)(0x62CB6EC6)
+F (..\FOC\calibration.c)(0x62CB7212)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\calibration.o --omf_browse stm32f407zgt6adc\calibration.crf --depend stm32f407zgt6adc\calibration.d)
+I (..\FOC\calibration.h)(0x62CB6EC6)
+I (../Inc/main.h)(0x62CB6CD7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x62258E35)
+I (../Inc/stm32f4xx_hal_conf.h)(0x62C89208)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x62258E35)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x62258E35)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x62258E35)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x62258E02)
+I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x62258E02)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x62258E02)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x62258E02)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x62258E02)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x62258E35)
+I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stddef.h)(0x599EDB3C)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x62258E35)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x62258E35)
+I (..\FOC\mydelay.h)(0x6257C6E4)
+I (../Inc/tim.h)(0x62C89208)
+I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x62258E01)
+I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\string.h)(0x599EDB3C)
+I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\math.h)(0x599EDB3E)
+I (..\FOC\foc_utils.h)(0x625CA9DE)
+I (..\FOC\BLDCmotor.h)(0x62B93B7D)
+I (..\FOC\pid.h)(0x6260A784)
+I (..\FOC\MagneticSensorI2C.h)(0x625F5A16)
+I (..\FOC\bsp_SysTick.h)(0x6257B343)
+I (..\FOC\lowpass_filter.h)(0x624FB632)
+I (..\FOC\FOCMotor.h)(0x62526571)
+I (../Inc/adc.h)(0x62CF3689)
+I (..\FOC\CurrentSense.h)(0x62B61AEC)
+I (..\FOC\InlineCurrentSense.h)(0x625F5128)
+I (D:\KeilUvision5MDK\keil526\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
+I (..\FOC\protocol.h)(0x62526742)
+I (../Inc/usart.h)(0x62C89208)
+I (..\FOC\tle5012b.h)(0x62C3C3CD)
+I (../Inc/spi.h)(0x62C89208)
 F (..\FPU\arm_common_tables.c)(0x5B2C6E9A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\FOC -I ..\FPU -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_stm32f407zgt6ADC-ID:\KeilUvision5MDK\keil526\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\KeilUvision5MDK\keil526\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32F407xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o stm32f407zgt6adc\arm_common_tables.o --omf_browse stm32f407zgt6adc\arm_common_tables.crf --depend stm32f407zgt6adc\arm_common_tables.d)
 I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x62258E01)
 I (../Drivers/CMSIS/Include/core_cm4.h)(0x62258E02)

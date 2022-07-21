@@ -15,7 +15,9 @@ DQCurrent_s current;
 TorqueControlType torque_controller;
 MotionControlType controller;
 
-float sensor_offset = 0;   //似乎没用
+float sensor_offset;   //编码器0度和电机三相驱动0度偏差
+float zero_angle;
+float Electrical_Angele_Sensor_Offset;//编码器电角度0度和电机三相驱动0度偏差
 float zero_electric_angle;
 /******************************************************************************/
 // shaft angle calculation
@@ -31,13 +33,14 @@ float shaftVelocity(void)
   // if no sensor linked return previous value ( for open loop )
   //if(!sensor) return shaft_velocity;
   return sensor_direction*LPFoperator(&LPF_velocity,getVelocity());
-	//return sensor_direction*getVelocity();
 }
 ///******************************************************************************/
 //电角度
 float electricalAngle(void)
 {
   return _normalizeAngle((shaft_angle + sensor_offset) * pole_pairs - zero_electric_angle);
+//	return _normalizeAngle(_2PI-(((AS5600_ReadRawAngle()/ cpr) * _2PI) * pole_pairs - Electrical_Angele_Sensor_Offset - zero_electric_angle));
+
 }
 
 

@@ -44,14 +44,12 @@ PhaseCurrent_s getPhaseCurrents(void)
 	current_ab.b = (adc_v - offset_ib)*gain_b;// amps
 	current_ab.c = -current_ab.a - current_ab.b;
 	
-//	current_ab.c = -(adc_u - offset_ia)*gain_a;// amps
-//	current_ab.b = (adc_v - offset_ib)*gain_b;// amps
-//	current_ab.a = -current_ab.c - current_ab.b;
+//	//a->c gainA=sign(C)*gain(A)
+//		current_ab.c = (adc_u - offset_ia)*gain_a;// amps
+//		current_ab.b = (adc_v - offset_ib)*gain_b;// amps
+//		current_ab.a = (-current_ab.b - current_ab.c);
 	
-//	current_ab.c = -(adc_u - offset_ia)*gain_a;// amps
-//	current_ab.a = -(adc_v - offset_ib)*gain_b;// amps
-//	current_ab.b = -current_ab.c - current_ab.a;
-	
+
 	
 //	current.c = (adc_w - offset_ic)*gain_c*1000;//
 	

@@ -7,9 +7,12 @@ PIDController  PID_current_q,PID_current_d,PID_velocity,P_angle;
 void PID_init(void)
 {
 	//速度环PID
-	PID_velocity.P=0.4;  //0.5
-	PID_velocity.I=0.6;    //1
-//	PID_velocity.I=50;    //1
+//	PID_velocity.P=0.4;  //0.5
+//	PID_velocity.I=0.6;    //1
+	
+	PID_velocity.P=0.5;  //0.5
+	PID_velocity.I=0.9;    //10
+
 	PID_velocity.D=0;
 	PID_velocity.output_ramp=1000;
 	//PID_velocity.limit=0;        //Motor_init()函数已经对limit初始化，此处无需处理
@@ -30,9 +33,13 @@ void PID_init(void)
 	P_angle.timestamp_prev=0;
 	
 	//电流环q轴PID
-	PID_current_q.P=0.5;  //航模电机，速度闭环，不能大于1，否则容易失控
-//	PID_current_q.I=50;    //电流环I参数不太好调试，只用P参数也可以
-	PID_current_q.I=0;    //电流环I参数不太好调试，只用P参数也可以
+//	PID_current_q.P=3;  //航模电机，速度闭环，不能大于1，否则容易失控
+//	PID_current_q.I=300;    //电流环I参数不太好调试，只用P参数也可以
+
+	PID_current_q.P=0.2;  //航模电机，速度闭环，不能大于1，否则容易失控
+	PID_current_q.I=2.5;    //电流环I参数不太好调试，只用P参数也可以
+
+//	PID_current_q.I=0;    //电流环I参数不太好调试，只用P参数也可以
 	PID_current_q.D=0;
 	PID_current_q.output_ramp=0;
 	//PID_current_q.limit=0;
@@ -42,9 +49,13 @@ void PID_init(void)
 	PID_current_q.timestamp_prev=0;
 	
 	//电流环d轴PID
-	PID_current_d.P=0.5;  //0.5
-//	PID_current_d.I=50;
-	PID_current_d.I=0;
+//	PID_current_d.P=3;  //0.5
+//	PID_current_d.I=300;  //0.5
+	
+	PID_current_d.P=0.2;  //航模电机，速度闭环，不能大于1，否则容易失控
+	PID_current_d.I=2.5;    //电流环I参数不太好调试，只用P参数也可以
+
+//	PID_current_d.I=0;
 	PID_current_d.D=0;
 	PID_current_d.output_ramp=0;
 	//PID_current_d.limit=0;

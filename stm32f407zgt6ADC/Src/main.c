@@ -22,6 +22,7 @@
 #include "main.h"
 #include "adc.h"
 #include "dma.h"
+#include "spi.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
@@ -44,7 +45,7 @@ extern float adc_v;
 uint16_t IU,IV;
 
 //extern __IO uint16_t ChannelPulse;
-__IO uint16_t ChannelPulse = 5600 - 1;//100%占空比
+__IO uint16_t ChannelPulse = 2100-1;//100%占空比
 
 float targetId;
 float targetIq;
@@ -66,11 +67,23 @@ uint32_t upvelocity;
 uint32_t upcurrentq;
 uint32_t upcurrentd;
 
+
+float now_angle;
 float now_velocity;
 float now_position;
 float Iq_target;
 
+extern float a,b,c;
 PhaseCurrent_s current_test;
+
+float ctt,stt,d_t,q_t;
+float i_alpha_t, i_beta_t;
+
+extern float sensor_offset;
+extern float Electrical_Angele_Sensor_Offset;
+
+float firstAngle;
+float SecondAngle;
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -102,11 +115,12 @@ void SystemClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-	voltage_limit = 6;          //V，最大值需小于 供电电压/sqrt(3) 12/1.732=6.9 24/sqrt(3)=13.8568
+//	voltage_limit = 6;          //V，最大值需小于 供电电压/sqrt(3) 12/1.732=6.9 24/sqrt(3)=13.8568
+	voltage_limit = 12;          //V，最大值需小于 供电电压/sqrt(3) 12/1.732=6.9 24/sqrt(3)=13.8568
 	voltage_power_supply = 12; 	//电源电压
-	voltage_sensor_align = 1;   //V alignSensor() use it，大功率电机设置的值小一点比如0.5-1，小电机设置的大一点比如2-3
-	current_limit = 50; 				//电流限制，速度模式和位置模式起作用
-	velocity_limit=20;         	//位置模式速度限制
+	voltage_sensor_align = 2;   //V alignSensor() use it，大功率电机设置的值小一点比如0.5-1，小电机设置的大一点比如2-3
+	current_limit = 30; 				//电流限制，速度模式和位置模式起作用
+	velocity_limit= 20;         	//位置模式速度限制
 	velocity_target = 3;        //待设定目标速度 3 rad/s
 	position_target = 3;
 	Iq_target = 0;
@@ -139,6 +153,7 @@ int main(void)
   MX_TIM3_Init();
   MX_TIM4_Init();
   MX_USART1_UART_Init();
+  MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
 	protocol_init();
 	
@@ -163,43 +178,115 @@ int main(void)
 	my_delay_ms(1000);
 	Current_calibrateOffsets();//电流偏置测量(空载情况下的电流)
 	my_delay_ms(1000);
+	/*****************************************************************/
+	//Uq90度
+//	//setPhaseVoltage(voltage_sensor_align, 0, _3PI_2);
+//	
+//	setPhaseVoltage(voltage_sensor_align, 0, _PI_2);
+//	
+//	firstAngle = shaftAngle();//理论上应该是90度
+//	
+////	setPhaseVoltage(0, voltage_sensor_align, 0);
+////	my_delay_ms(500);
+//	sensor_offset = shaftAngle();// shaft angle
+//	sensor_offset = sensor_offset - _PI_2/7;
 	
+	/*****************************************************************/
+
+	
+	
+	
+//	setPhaseVoltage(0, 0, 0);
+#if 0
+	CALIBRATION_start();
+
+	CALIBRATION_loop();
+	my_delay_ms(1000);	
+#endif
+
+#if 1
 	set_computer_value(SEND_STOP_CMD, CURVES_CH1, NULL, 0);                // 同步上位机的启动按钮状态
 	set_computer_value(SEND_STOP_CMD, CURVES_CH2, NULL, 0);                // 同步上位机的启动按钮状态
 	set_computer_value(SEND_STOP_CMD, CURVES_CH3, NULL, 0);                // 同步上位机的启动按钮状态
 	set_computer_value(SEND_STOP_CMD, CURVES_CH4, NULL, 0);                // 同步上位机的启动按钮状态
 	
-	set_computer_value(SEND_TARGET_CMD, CURVES_CH1, &upcurrentq, 1);     // 给通道 3发送目标值
-	set_computer_value(SEND_TARGET_CMD, CURVES_CH2, &upcurrentd, 1);     // 给通道 3发送目标值
-	set_computer_value(SEND_TARGET_CMD, CURVES_CH3, &velocity_target, 1);     // 给通道 3发送目标值
-	set_computer_value(SEND_TARGET_CMD, CURVES_CH4, &position_target, 1);     // 给通道 3发送目标值
+//	set_computer_value(SEND_TARGET_CMD, CURVES_CH1, &upcurrentq, 1);     // 给通道 3发送目标值
+//	set_computer_value(SEND_TARGET_CMD, CURVES_CH2, &upcurrentd, 1);     // 给通道 3发送目标值
+//	set_computer_value(SEND_TARGET_CMD, CURVES_CH3, &velocity_target, 1);     // 给通道 3发送目标值
+//	set_computer_value(SEND_TARGET_CMD, CURVES_CH4, &position_target, 1);     // 给通道 3发送目标值
 	
 	set_computer_value(SEND_START_CMD, CURVES_CH1, NULL, 0);               // 同步上位机的启动按钮状态
 	set_computer_value(SEND_START_CMD, CURVES_CH2, NULL, 0);               // 同步上位机的启动按钮状态
 	set_computer_value(SEND_START_CMD, CURVES_CH3, NULL, 0);               // 同步上位机的启动按钮状态
 	set_computer_value(SEND_START_CMD, CURVES_CH4, NULL, 0);               // 同步上位机的启动按钮状态
+#endif	
+//	setPhaseVoltage(voltage_sensor_align,0,_PI_2);
+	
+//	setPhaseVoltage(0,voltage_sensor_align,0);
 	
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
+	
   while (1)
   {
-		receiving_process();
+		#if 0
+			receiving_process();
+		#endif
+		
+		#if 0
+//		shaft_angle = shaftAngle();// shaft angle
+		
+		electrical_angle = electricalAngle();// electrical angle - need shaftAngle to be called first
+		shaft_angle = shaftAngle();// shaft angle
+		now_velocity = getVelocity();
+		#endif
+//		printf("%f\r\n",PIDoperator(&PID_velocity,(10 - 5)));
+		
+		#if 0
+		//Ud基准
+		setPhaseVoltage(0,voltage_sensor_align,(_2PI * 0.f/ 12.0f));
+		
+		current_test = getPhaseCurrents();
+		
+		shaft_angle = shaftAngle();// shaft angle
+		electrical_angle = electricalAngle();// electrical angle - need shaftAngle to be called first
+		
+		i_alpha_t = current_test.a;  
+		i_beta_t = _1_SQRT3 * current_test.a + _2_SQRT3 * current_test.b;//a + b + c = 0
+
+//		ctt = arm_cos_f32(_2PI * 0.f/ 12.0f);
+//		stt = arm_sin_f32(_2PI * 0.f/ 12.0f);
+		
+		ctt = arm_cos_f32(electrical_angle);
+		stt = arm_sin_f32(electrical_angle);
+		
+		//simplefoc的park变换
+		d_t = i_alpha_t * ctt + i_beta_t * stt;
+		q_t = i_beta_t * ctt - i_alpha_t * stt;
+		
+		#endif
+//		printf( "angle : %.04f\r\n", ReadAngle() );
+
+//		HAL_Delay(1000);
 		
 		//电机对相
 		#if 0
-//		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_1,0);
-//		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_2,0);
-//		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_3,0.09*ChannelPulse);
-		
-//		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_1,0);
-//		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_2,0.09*ChannelPulse);
-//		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_3,0);
-		
-		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_1,0.09*ChannelPulse);
+		//a
+		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_1,0.1*ChannelPulse);
 		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_2,0);
 		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_3,0);
+		//b
+//		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_1,0);
+//		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_2,0.1*ChannelPulse);
+//		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_3,0);
+		//c
+//		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_1,0);
+//		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_2,0);
+//		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_3,0.1*ChannelPulse);
+		
 		
 		current_test = getPhaseCurrents();
 		#endif
@@ -234,7 +321,7 @@ int main(void)
 
 //Iq
 #if 0
-		shaft_angle = shaftAngle();// shaft angle
+//		shaft_angle = shaftAngle();// shaft angle
 		electrical_angle = electricalAngle();// electrical angle - need shaftAngle to be called first
 		
 		// read dq currents
@@ -247,16 +334,43 @@ int main(void)
 		voltage.q = PIDoperator(&PID_current_q, (targetIq - current.q));
 		setPhaseVoltage(voltage.q , 0, electrical_angle);
 #endif
+//clark park 变换验证
+
 #if 0
-		move(0.05);
-		loopFOCtest();
-		shaft_velocity = shaftVelocity();//测速
-		upvelocity = shaft_velocity * 1000;
+//	DQCurrent_s getFOCCurrents(float angle_el);
+	
+	float angle_t = _PI/6;
+	float ctt,stt,d_t,q_t;
+	float i_alpha_t, i_beta_t;
+	float Ia_t = 0.5;
+	float	Ib_t = -0.3;
+	
+	i_alpha_t = Ia_t;  
+	i_beta_t = _1_SQRT3 * Ia_t + _2_SQRT3 * Ib_t;//a + b + c = 0
+	
+	ctt = arm_cos_f32(angle_t);
+	stt = arm_sin_f32(angle_t);
+	
+	//simplefoc的park变换
+	d_t = i_alpha_t * ctt + i_beta_t * stt;
+	q_t = i_beta_t * ctt - i_alpha_t * stt;
+	
+	printf("d_t:%f\r\n",d_t);
+	printf("q_t:%f\r\n",q_t);
 #endif
-//		//速度模式
+
+//电流模式
+#if 0
+		move(0);
+		loopFOCtest();
+		now_velocity = shaftVelocity();//测速
+		now_position = getAngle();
+#endif
+//速度模式
 #if 1
 		now_velocity = move_velocity(velocity_target);
 		loopFOCtest();
+		
 //		upposition = getAngle();
 		
 //		upvelocity = now_velocity * 1000;
@@ -269,7 +383,7 @@ int main(void)
 ////		set_computer_value(SEND_FACT_CMD, CURVES_CH4, &upposition, 1);     // 给通道4发送位置值
 #endif
 
-		//位置环模式
+//位置环模式
 #if 0
 		now_position = move_position(position_target);
 		loopFOCtest();//电流环PID
@@ -284,6 +398,27 @@ int main(void)
 //		now_velocity= move_velocity(velocity_target);
 //		loopFOCtest();
 
+//	float A,B;
+//	float d =_2PI/2048;
+	
+#if 0
+//马鞍波测试
+	for(uint32_t i = 0; i<5000;i++){
+		shaft_angle = shaftAngle();// shaft angle
+		electrical_angle = electricalAngle();// electrical angle - need shaftAngle to be called first
+		setPhaseVoltage(3*arm_sin_f32(((float)i/5000.0f) * _2PI),3*arm_cos_f32(((float)i/5000.0f) * _2PI),electrical_angle);
+
+//		my_delay_ms(10);
+		
+		set_computer_value(SEND_FACT_CMD, CURVES_CH1, &a, 1);     
+		set_computer_value(SEND_FACT_CMD, CURVES_CH2, &b, 1);  
+		set_computer_value(SEND_FACT_CMD, CURVES_CH3, &c, 1);     
+		
+	}
+#endif
+
+//发送通道值
+#if 0
 		upposition = now_position * 1000;//扩大1000
 		upvelocity = now_velocity * 1000;//扩大1000
 		upcurrentq = current.q * 1000 + 1000;//扩大1000，偏置1000
@@ -292,6 +427,7 @@ int main(void)
 		set_computer_value(SEND_FACT_CMD, CURVES_CH2, &upcurrentd, 1);     // 给通道2发Id
 		set_computer_value(SEND_FACT_CMD, CURVES_CH3, &upvelocity, 1);     // 给通道3发送速度值
 		set_computer_value(SEND_FACT_CMD, CURVES_CH4, &upposition, 1);     // 给通道4发送位置值
+#endif
 		
 		
     /* USER CODE END WHILE */

@@ -54,3 +54,4 @@ stm32f407zgt6adc\dma.o: ..\FOC\InlineCurrentSense.h
 stm32f407zgt6adc\dma.o: D:\KeilUvision5MDK\keil526\ARM\ARMCC\Bin\..\include\stdio.h
 stm32f407zgt6adc\dma.o: ..\FOC\protocol.h
 stm32f407zgt6adc\dma.o: ../Inc/usart.h
+stm32f407zgt6adc\dma.o: ..\FOC\tle5012b.h

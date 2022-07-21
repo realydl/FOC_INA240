@@ -31,6 +31,7 @@ stm32f407zgt6adc\bldcmotor.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_
 stm32f407zgt6adc\bldcmotor.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
 stm32f407zgt6adc\bldcmotor.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 stm32f407zgt6adc\bldcmotor.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+stm32f407zgt6adc\bldcmotor.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
 stm32f407zgt6adc\bldcmotor.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 stm32f407zgt6adc\bldcmotor.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 stm32f407zgt6adc\bldcmotor.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
@@ -54,3 +55,6 @@ stm32f407zgt6adc\bldcmotor.o: ..\FOC\InlineCurrentSense.h
 stm32f407zgt6adc\bldcmotor.o: D:\KeilUvision5MDK\keil526\ARM\ARMCC\Bin\..\include\stdio.h
 stm32f407zgt6adc\bldcmotor.o: ..\FOC\protocol.h
 stm32f407zgt6adc\bldcmotor.o: ../Inc/usart.h
+stm32f407zgt6adc\bldcmotor.o: ..\FOC\tle5012b.h
+stm32f407zgt6adc\bldcmotor.o: ../Inc/spi.h
+stm32f407zgt6adc\bldcmotor.o: ..\FOC\calibration.h

@@ -18,6 +18,8 @@ extern float current_limit;
 
 extern float targetId;
 extern float targetIq;
+
+extern float zero_angle;
 //void Motor_init(void)
 //{
 //	printf("MOT: Init\r\n");
@@ -85,18 +87,31 @@ int alignSensor(void)
 	{
 		// find natural direction
 		// move one electrical revolution forward
+		
+		setPhaseVoltage(0, voltage_sensor_align, 0);
+		my_delay_ms(200);
+		
 		for(i = 0; i<=500; i++)
 		{
-			angle = _3PI_2 + _2PI * i / 500.0f;
-			setPhaseVoltage(voltage_sensor_align, 0,  angle);
+//			angle = _3PI_2 + _2PI * i / 500.0f;
+			
+			angle = _2PI* i / 500.0f;
+//			setPhaseVoltage(voltage_sensor_align, 0,  angle);
+			setPhaseVoltage(0, voltage_sensor_align,  angle);
 			my_delay_ms(2);
 		}
+		
+		setPhaseVoltage(0, voltage_sensor_align, _2PI);
+		my_delay_ms(200);
+		
 		mid_angle = getAngle();
 		
 		for(i = 500; i>=0; i--) 
 		{
-			angle = _3PI_2 + _2PI * i / 500.0f ;
-			setPhaseVoltage(voltage_sensor_align, 0,  angle);
+			//angle = _3PI_2 + _2PI * i / 500.0f ;
+			angle = _2PI * i / 500.0f ;
+//			setPhaseVoltage(voltage_sensor_align, 0,  angle);
+			setPhaseVoltage(0, voltage_sensor_align,  angle);
 			my_delay_ms(2);
 		}
 		end_angle = getAngle();
@@ -109,7 +124,7 @@ int alignSensor(void)
 		moved = fabs(mid_angle - end_angle);
 		if((mid_angle == end_angle)||(moved < 0.01f))  //相等或者几乎没有动
 		{
-			printf("MOT: Failed to notice movement loop222.\r\n");
+			printf("MOT: Failed to notice movement\r\n");
 			M1_Disable;    //电机检测不正常，关闭驱动
 			return 0;
 		}
@@ -117,11 +132,13 @@ int alignSensor(void)
 		{
 			printf("MOT: sensor_direction==CCW\r\n");
 			sensor_direction=CCW;
+//			sensor_direction=CW;
 		}
 		else
 		{
 			printf("MOT: sensor_direction==CW\r\n");
 			sensor_direction=CW;
+//			sensor_direction=CCW;
 		}
 		
 		printf("MOT: PP check: ");    //计算Pole_Pairs
@@ -138,9 +155,23 @@ int alignSensor(void)
 	
 	if(zero_electric_angle == 0)  //没有设置，需要检测
 	{
-		setPhaseVoltage(voltage_sensor_align, 0,  _3PI_2);  //计算零点偏移角度
+//		setPhaseVoltage(voltage_sensor_align, 0,  _3PI_2);  //计算零点偏移角度	
+		//setPhaseVoltage(voltage_sensor_align, 0,  _PI_2);  //计算零点偏移角度
+		
+		setPhaseVoltage(0, voltage_sensor_align,  0);  //计算零点偏移角度
+		
+//		//Ud基准0
+//		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_1,0.4*ChannelPulse);
+//		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_2,0);
+//		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_3,0);
+//		my_delay_ms(500);
+//	
+//		SecondAngle = shaftAngle();
+//		sensor_offset = shaftAngle();// shaft angle
+			
 		my_delay_ms(700);
 		zero_electric_angle = _normalizeAngle(_electricalAngle(sensor_direction*getAngle(), pole_pairs));
+		zero_angle = _normalizeAngle(sensor_direction*getAngle());
 		my_delay_ms(20);
 		printf("MOT: Zero elec. angle:");
 		printf("%.4f\r\n",zero_electric_angle);
@@ -183,6 +214,7 @@ uint8_t setPhaseVoltage(float Uq, float Ud, float angle_el)
 		// angle normalisation in between 0 and 2pi
 		// only necessary if using _sin and _cos - approximation functions
 		angle_el = _normalizeAngle(angle_el + atan2(Uq, Ud));//电角度加上UqUd之间的夹角
+//		angle_el = _normalizeAngle(angle_el - atan2(Uq, Ud));//电角度加上UqUd之间的夹角
 	}
 	else
 	{// only Uq available - no need for atan2 and sqrt
@@ -190,6 +222,7 @@ uint8_t setPhaseVoltage(float Uq, float Ud, float angle_el)
 		// angle normalisation in between 0 and 2pi
 		// only necessary if using _sin and _cos - approximation functions
 		angle_el = _normalizeAngle(angle_el + _PI_2);
+//		angle_el = _normalizeAngle(angle_el - _PI_2);
 	}
 	if(Uout> 0.577f)Uout= 0.577f;
 	if(Uout<-0.577f)Uout=-0.577f;
@@ -214,7 +247,7 @@ uint8_t setPhaseVoltage(float Uq, float Ud, float angle_el)
 //		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_4,(Tb-T0/8)*ChannelPulse);
 			break;
 		case 2://U,V
-			Ta = T1 +  T0/2;
+			Ta = T1 + T0/2;
 			Tb = T1 + T2 + T0/2;
 			Tc = T0/2;
 //		__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_4,(Ta-T0/8)*ChannelPulse);
@@ -248,10 +281,19 @@ uint8_t setPhaseVoltage(float Uq, float Ud, float angle_el)
 			Tb = 0;
 			Tc = 0;
 	}
+	
+//	Ta = (1-Ta)/2;
+//	Tb = (1-Tb)/2;
+//	Tc = (1-Tc)/2;
+	
 	//或者可以使用串口打印波形	
+//	a = Ta*10000;
+//	b = Tb*10000;
+//	c = Tc*10000;
 	a = Ta*ChannelPulse;
 	b = Tb*ChannelPulse;
 	c = Tc*ChannelPulse;
+	
 	__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_1,Ta*ChannelPulse);//U+
 	__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_2,Tb*ChannelPulse);//V+
 	__HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_3,Tc*ChannelPulse);//W+
@@ -291,7 +333,7 @@ float move_position(float position_target){
 	// angle set point
 	shaft_angle_sp = position_target;
 	// calculate velocity set point
-	shaft_velocity_sp = PIDoperator(&P_angle,-(shaft_angle_sp - shaft_angle));
+	shaft_velocity_sp = PIDoperator(&P_angle,(shaft_angle_sp - shaft_angle));
 	// calculate the torque command
 	current_sp = PIDoperator(&PID_velocity,(shaft_velocity_sp - shaft_velocity)); // if voltage torque control
 

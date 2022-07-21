@@ -326,28 +326,54 @@ float AS5600_ReadRawAngle(void)
 	return rawangle;
 }
 
+//有bug
 float getAngle(void)//AS5600
 {
 	cpr = AS5600_CPR;
 	long angle_data,d_angle;
 	
-	angle_data = AS5600_ReadRawAngle();
+	angle_data = AS5600_ReadRawAngle();//原角度
 	
 	// tracking the number of rotations 
 	// in order to expand angle range form [0,2PI] to basically infinity
 	d_angle = angle_data - angle_data_prev;
 	// if overflow happened track it as full rotation
-	if(fabs(d_angle) > (0.8*cpr) ) 
+	if(fabs(d_angle) >= 0.8*cpr ) 
 		full_rotation_offset += (d_angle > 0) ? -_2PI : _2PI; 
+
 	// save the current angle value for the next steps
 	// in order to know if overflow happened
 	angle_data_prev = angle_data;
 	// return the full angle 
+	
 	// (number of full rotations)*2PI + current sensor angle 
 	return (full_rotation_offset + ( (float)angle_data / cpr) * _2PI);
 }
 
+//float getAngle(void)//AS5600
+//{
+//	cpr = AS5600_CPR;
+//	long angle_data,d_angle;
+//	
+//	angle_data = AS5600_ReadRawAngle();//原角度
 
+//	d_angle = angle_data - angle_data_prev;
+//	
+//	// if overflow happened track it as full rotation
+//	if(fabs(d_angle) >= 0 ){
+//		if((angle_data_prev + fabs(d_angle)) > _2PI)
+//			
+//	}else{
+//		if((angle_data_prev - fabs(d_angle)) < _2PI)
+//	}
+//			
+
+//	angle_data_prev = angle_data;
+//	// return the full angle 
+//	
+//	// (number of full rotations)*2PI + current sensor angle 
+//	return (full_rotation_offset + ( (float)angle_data / cpr) * _2PI);
+//}
 
 // Shaft velocity calculation
 float getVelocity(void)
